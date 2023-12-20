@@ -1,13 +1,25 @@
+/* src/index.css or src/tailwind.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+/* App.css or styles.css */
+
+/* Apply light red color to the entire page */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #ffcccc; /* Light red color */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Reset default margin/padding and box model for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Style the hero image to be centered */
+img {
+  display: block;
+  margin: 0 auto;
 }

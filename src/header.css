@@ -1,0 +1,56 @@
+/* header.css */
+
+/* Style the header element */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000; 
+    background-color: rgba(255, 146, 146, 0.2); /* Semi-transparent background color */
+    backdrop-filter: blur(20px); /* Apply a blur effect */
+    -webkit-backdrop-filter: blur(20px); /* For Safari */
+    color: #ff3434;
+    padding: 1rem;
+  }
+  
+  /* Center the content and adjust alignment */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Style the logo or site title */
+  h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Style the navigation links */
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the individual navigation link items */
+  li {
+    display: inline;
+    margin-right: 1rem;
+  }
+  
+  /* Style the anchor tags within the navigation */
+  a {
+    color: #ff0000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect for navigation links */
+  a:hover {
+    color: #330404;
+  }
+  

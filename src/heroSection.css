@@ -1,0 +1,32 @@
+/* HeroSection.css */
+
+/* Style the section container */
+.section-container {
+    position: relative;
+    background-color: #ffcccc; /* Light red color */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style the big text */
+  .big-text {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ff0000; /* White text color */
+    position: absolute;
+    z-index: 10; /* Place text above the image */
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Style the hero image */
+  .hero-image {
+    max-width: 150%;
+    max-height: 150%;
+    z-index: 0;
+  }
+  
