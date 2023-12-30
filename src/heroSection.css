@@ -3,7 +3,7 @@
 /* Style the section container */
 .section-container {
     position: relative;
-    background-color: #ffcccc; /* Light red color */
+    background: linear-gradient(circle, #ffcccc, #ff9999); /* Radial gradient background */
     height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
@@ -29,4 +29,66 @@
     max-height: 150%;
     z-index: 0;
   }
-  
+
+/* Fixed positioning for the text */
+.big-text {
+  /*position: fixed;*/
+  /*transform: translate(-50%, -50%);*/
+  font-size: 4rem;
+  z-index: 0;
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+}
+
+/* Fixed positioning for the image */
+.hero-image {
+  top: 50%;
+  left: 30%;
+  /*transform: translate(-50%, -50%);*/
+  z-index: 1;
+  transition: transform 0.3s ease-out;
+}
+
+/* Style the button */
+.cta-button {
+  padding: 15px 25px; /* Increased padding for a larger button */
+  margin-top: 20px;
+  font-size: 1.2rem; /* Larger font size */
+  font-weight: bold; /* Bolder font weight */
+  background-color: #ff0000; /* Red color - you can adjust */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  /* Add transition for transform and box-shadow */
+}
+
+/* Hover effect for the button */
+.cta-button:hover {
+  background-color: #b30024; /* Darker red color - you can adjust */
+  transform: scale(1.05); /* Scale the button slightly */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+
+/* Example media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .big-text {
+    font-size: 1.7rem; /* Adjust font size for smaller screens */
+    top: 15%; /* Modify text position for smaller screens */
+  }
+
+  .hero-image {
+    max-width: 100%; /* Adjust image size for smaller screens */
+    max-height: 100%; /* Adjust image size for smaller screens */
+    top: 50%;
+    left: 50%;
+
+  }
+
+  .cta-button {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+    margin-top: 15px; /* Adjust margin-top for smaller screens */
+  }
+}

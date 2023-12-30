@@ -1,0 +1,25 @@
+/* text.css */
+
+.title-text-page {
+  height: auto; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: none;
+  backdrop-filter: blur(10px); /* Apply a blur effect */
+  color: #ff0000; /* Text color */
+}
+
+.title_ {
+  font-size: 7rem;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Example media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .title_ {
+    font-size: 4rem; /* Adjust font size for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}

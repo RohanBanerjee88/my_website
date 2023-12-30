@@ -1,0 +1,147 @@
+/* projects.css */
+
+.projects-container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  overflow: hidden; /* Hide overflowing circles */
+}
+
+.project-card {
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  text-align: center;
+  z-index: 1;
+}
+
+.project-card:hover {
+  transform: scale(1.2);
+}
+
+.project-image {
+  width: 220px;
+  height: 250px;
+  border-radius: 30%;
+  margin: 0 auto 10px;
+  display: block;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #ff0000;
+  margin: 0;
+}
+
+/* Circle styles */
+.projects-container::before,
+.projects-container::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  animation-duration: 4s; /* Adjust animation duration */
+  animation-iteration-count: infinite;
+}
+
+/* First gradient circle animation */
+.projects-container::before {
+  width: 280px; /* Adjust circle size */
+  height: 280px; /* Adjust circle size */
+  background: radial-gradient(circle at 20% 50%, #ff1e00, transparent),
+              radial-gradient(circle at 80% 50%, rgb(227, 66, 66), transparent);
+  top: 150px; /* Adjust positioning */
+  left: 10px; /* Adjust positioning */
+  animation-name: circleAnimation1;
+}
+
+/* Second gradient circle animation */
+.projects-container::after {
+  width: 300px; /* Adjust circle size */
+  height: 300px; /* Adjust circle size */
+  background: radial-gradient(circle at 70% 80%, #d73762, transparent),
+              radial-gradient(circle at 30% 20%, #ff2600, transparent);
+  bottom: 100px; /* Adjust positioning */
+  right: 200px; /* Adjust positioning */
+  animation-name: circleAnimation2;
+}
+
+
+/* Animation keyframes for random motion */
+@keyframes circleAnimation1 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(400px, 150px); /* Random horizontal and vertical translation */
+  }
+  50% {
+    transform: translate(-50px, 50px); /* Random horizontal and vertical translation */
+  }
+  75% {
+    transform: translate(200px, -80px); /* Random horizontal and vertical translation */
+  }
+}
+
+@keyframes circleAnimation2 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(100px, -50px); /* Random horizontal and vertical translation */
+  }
+  50% {
+    transform: translate(-30px, 70px); /* Random horizontal and vertical translation */
+  }
+  75% {
+    transform: translate(-200px, -40px); /* Random horizontal and vertical translation */
+  }
+}
+
+
+/* Example media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .projects-container {
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    justify-content: center; /* Center cards */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .project-card {
+    width: 250px; /* Adjust card width for smaller screens */
+    height: 350px; /* Adjust card height for smaller screens */
+    margin: 10px; /* Add margin between cards */
+  }
+
+  .project-image {
+    width: 200px; /* Adjust image size for smaller screens */
+    height: 200px; /* Adjust image size for smaller screens */
+    margin-bottom: 5px; /* Adjust margin for smaller screens */
+  }
+
+  .project-title {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  /* Adjust circle sizes for smaller screens */
+  .projects-container::before {
+    width: 180px;
+    height: 180px;
+    top: 70px;
+    left: 5px;
+  }
+
+  .projects-container::after {
+    width: 200px;
+    height: 200px;
+    bottom: 50px;
+    right: 100px;
+  }
+}

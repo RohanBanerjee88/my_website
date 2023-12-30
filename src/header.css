@@ -2,55 +2,75 @@
 
 /* Style the header element */
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem;
-    z-index: 1000; 
-    background-color: rgba(255, 146, 146, 0.2); /* Semi-transparent background color */
-    backdrop-filter: blur(20px); /* Apply a blur effect */
-    -webkit-backdrop-filter: blur(20px); /* For Safari */
-    color: #ff3434;
-    padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+  background-color: rgba(237, 124, 124, 0.2); /* Semi-transparent background color */
+  backdrop-filter: blur(20px); /* Apply a blur effect */
+  -webkit-backdrop-filter: blur(20px); /* For Safari */
+  color: #ff3434;
+  padding: 1rem;
+}
+
+/* Center the content and adjust alignment */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the logo or site title */
+h1 {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Style the icon */
+.icon {
+  width: 60px; /* Adjust the width of the icon */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add spacing between the icon and text */
+}
+
+/* Style the individual navigation link items */
+li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+/* Style the anchor tags within the navigation */
+a {
+  color: #ff0000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease; /* Add transition for background color */
+  padding: 8px 12px; /* Add padding for button-like effect */
+  border-radius: 5px; /* Add border-radius for button-like effect */
+  border: 1px solid transparent; /* Add border for button-like effect */
+}
+
+/* Hover effect for navigation links */
+a:hover {
+  color: #000000;
+  /* background-color: #ff0000; Change background color on hover */
+  border-color: #ff0000; /* Change border color on hover */
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0.8rem; /* Adjust padding for smaller screens */
   }
-  
-  /* Center the content and adjust alignment */
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  /* Style the logo or site title */
+
   h1 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 0;
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
   }
-  
-  /* Style the navigation links */
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Style the individual navigation link items */
-  li {
-    display: inline;
-    margin-right: 1rem;
-  }
-  
-  /* Style the anchor tags within the navigation */
-  a {
-    color: #ff0000;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  /* Hover effect for navigation links */
-  a:hover {
-    color: #330404;
-  }
-  
+
+  /* Add more specific styles for smaller screens if needed */
+}

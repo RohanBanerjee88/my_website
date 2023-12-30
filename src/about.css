@@ -1,0 +1,66 @@
+/* about.css */
+
+/* Body styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, #ffcccc, #ff9999); /* Radial gradient background */
+  }
+  
+  /* About container */
+  .about-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    align-items: center; /* Center vertically */
+  }
+  
+  /* About card */
+  .about-card {
+    width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+  }
+  
+  .about-card h2 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color: #ff0000;
+  }
+  
+  .about-card p {
+    font-weight: bold;
+    color: #ff0000;
+  }
+  
+  .social-links {
+    margin-top: 20px;
+  }
+  
+  .social-links a {
+    display: block;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color: #ff0000;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    background-color: none;
+    text-decoration: underline;
+  }
+  
+  /* GIF image */
+  .gif-image {
+    padding-top: 20px;
+    width: 600px; /* Adjust size as needed */
+  }
+  
+  .gif-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
