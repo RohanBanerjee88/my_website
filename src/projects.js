@@ -5,6 +5,10 @@ import stocksImage from './Images/stocks.png';
 import crashImage from './Images/crash.png';
 import dropImage from './Images/drop.png';
 import recapImage from './Images/recap.png';
+import outlayImage from './Images/out.png'
+import SignLang from './Images/sll.png'
+import EazyImg from './Images/cc.png'
+import TerImg from './Images/tss.png'
 
 const projects = [
   {
@@ -15,7 +19,7 @@ const projects = [
   },
   {
     id: 2,
-    title: 'CrashEye',
+    title: 'Zenith',
     image: crashImage,
     link: 'https://github.com/RohanBanerjee88/CrashEye',
   },
@@ -31,7 +35,30 @@ const projects = [
     image: recapImage,
     link: 'https://github.com/RohanBanerjee88/Notes.AI-Test-',
   },
-  // Add more projects as needed
+  {
+    id: 5,
+    title: 'Outlay',
+    image: outlayImage,
+    link: 'https://github.com/RohanBanerjee88/Outlay',
+  },
+  {
+    id: 6,
+    title: 'SignLang',
+    image: SignLang,
+    link: 'https://github.com/RohanBanerjee88/SignLang',
+  },
+  {
+    id: 7,
+    title: 'Eazy',
+    image: EazyImg,
+    link: 'https://github.com/RohanBanerjee88/eazy_app',
+  },
+  {
+    id: 8,
+    title: 'Terminal',
+    image: TerImg,
+    link: 'https://github.com/RohanBanerjee88/Terminal_S',
+  },
 ];
 
 function ProjectSection() {

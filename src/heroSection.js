@@ -39,7 +39,7 @@ function HeroSection() {
 
       {/* Button with confetti effect */}
       <button className="cta-button" onClick={handleClick}>
-        Say Hello! 😊
+        <h2>Say Hello! 😊</h2>
       </button>
 
       {/* Confetti effect */}

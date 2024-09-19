@@ -58,7 +58,7 @@ a {
 
 /* Hover effect for navigation links */
 a:hover {
-  color: #000000;
+  color: #ff0000;
   /* background-color: #ff0000; Change background color on hover */
   border-color: #ff0000; /* Change border color on hover */
 }

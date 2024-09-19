@@ -14,7 +14,7 @@ Excited to connect and explore opportunities in software design, research, and i
         <div className="social-links">
           <a href="https://github.com/RohanBanerjee88">GitHub</a>
           <a href="https://www.linkedin.com/in/rohan-banerjee-b4651520a/">LinkedIn</a>
-          <a href="./res/New_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a href="/public/resume.pdf" target="_blank" >Resume</a>
         </div>
       </div>
       <div className="gif-image">

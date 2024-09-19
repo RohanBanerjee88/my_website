@@ -1,29 +1,75 @@
-/* footer.css */
 
 /* Style for the image */
 .coffee-image {
-    width: 120px;
-    height: auto;
+  width: 120px;
+  height: auto;
+}
+
+/* Footer container styling */
+.footer-text-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(65, 9, 9);
+  color: #ffffff;
+  padding: 1em;
+  width: 100%;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px; /* Adjust grid size */
+}
+
+.footer_ {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For tablets or smaller screens */
+@media screen and (max-width: 1024px) {
+  .coffee-image {
+      width: 100px; /* Smaller image size for tablets */
   }
-  
-  .footer-text-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(65, 9, 9);
-    color: #ffffff;
-    padding: 1em;
-    width: 100%;
-    background-image: 
-      linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-    background-size: 20px 20px; /* Adjust grid size */
-  }
-  
+
   .footer_ {
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 10px;
+      font-size: 2.5rem; /* Slightly smaller font size for tablets */
   }
-  
+
+  .footer-text-page {
+      padding: 0.8em;
+  }
+}
+
+/* For mobile screens */
+@media screen and (max-width: 768px) {
+  .coffee-image {
+      width: 80px; /* Smaller image size for mobile */
+  }
+
+  .footer_ {
+      font-size: 2rem; /* Smaller font size for mobile */
+  }
+
+  .footer-text-page {
+      padding: 0.6em;
+  }
+}
+
+/* For extra-small screens */
+@media screen and (max-width: 480px) {
+  .coffee-image {
+      width: 60px; /* Even smaller image size for extra small screens */
+  }
+
+  .footer_ {
+      font-size: 1.8rem; /* Further reduce font size for extra small screens */
+  }
+
+  .footer-text-page {
+      padding: 0.4em;
+  }
+}

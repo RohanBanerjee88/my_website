@@ -3,7 +3,7 @@
 /* Style the section container */
 .section-container {
     position: relative;
-    background: linear-gradient(circle, #ffcccc, #ff9999); /* Radial gradient background */
+    background: #ffffff; /* Radial gradient background */
     height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
@@ -55,27 +55,29 @@
   margin-top: 20px;
   font-size: 1.2rem; /* Larger font size */
   font-weight: bold; /* Bolder font weight */
-  background-color: #ff0000; /* Red color - you can adjust */
-  color: #fff;
-  border: none;
-  border-radius: 5px;
+  background-color: #00000000; /* Red color - you can adjust */
+  border-width: 3px;
+  border-color: #ff0000;
+  border-radius: 12px;
   cursor: pointer;
+  color: #ff0000;
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   /* Add transition for transform and box-shadow */
 }
 
 /* Hover effect for the button */
 .cta-button:hover {
-  background-color: #b30024; /* Darker red color - you can adjust */
-  transform: scale(1.05); /* Scale the button slightly */
+  background-color: #ff0000; /* Darker red color - you can adjust */
+  transform: scale(1.25); /* Scale the button slightly */
+  color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
 }
 
 /* Example media query for smaller screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .big-text {
-    font-size: 1.7rem; /* Adjust font size for smaller screens */
-    top: 15%; /* Modify text position for smaller screens */
+    font-size: 2.7rem; /* Adjust font size for smaller screens */
+    top: 20%; /* Modify text position for smaller screens */
   }
 
   .hero-image {
