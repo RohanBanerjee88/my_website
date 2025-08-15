@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap');
+
+
+/* Section canvas */
+.folders {
+  background: #e1e2e2;
+  min-height: 80vh;
+  padding: clamp(40px, 8vw, 96px) 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Centered grid */
+.folder-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(240px, 280px));
+  gap: clamp(28px, 3vw, 56px);   /* a little extra space between columns/rows */
+  justify-content: center;
+  align-items: start;
+}
+
+/* Each column: folder on top, sticker positioned OUTSIDE below it */
+.folder-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* reserve space for the sticker that sits outside */
+  padding-bottom: 110px;          /* ≈ sticker height + gap */
+}
+
+.folder-arrow {
+  position: absolute;
+  bottom: -100%; /* sits at the very bottom of the wrapper space */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;       /* adjust size as you wish */
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.folder-label {
+  position: absolute;
+  bottom: -120%; /* sits at the very bottom of the wrapper space */
+  left: 50%;
+  transform: translateX(-50%);
+  height: auto;
+  font-family: "Playwrite AU QLD", cursive;
+  font-size: clamp(16px, 2.2vw, 28px);
+  font-weight: 300;
+  color: #7d7c7c;
+}
+
+
+
+
+/* The folder component itself (no change needed), but if your Folder sets overflow hidden,
+   it won't affect the sticker because the sticker is outside the folder. */
+
+/* Sticker OUTSIDE the folder, centered under it */
+.folder-sticker-one {
+  position: absolute;
+  top: -50%;         /* sits just below the folder */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;                    /* tweak as you like */
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
+
+}
+.folder-sticker-two {
+  position: absolute;
+  top: -50%;         /* sits just below the folder */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;                    /* tweak as you like */
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.folder-sticker-three {
+  position: absolute;
+  top: -60%;         /* sits just below the folder */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;                    /* tweak as you like */
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.folder-sticker-four{
+  position: absolute;
+  top: -40%;         /* sits just below the folder */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;                    /* tweak as you like */
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+  .folder-grid { grid-template-columns: repeat(2, minmax(240px, 1fr)); }
+}
+
+@media (max-width: 640px) {
+  .folder-grid { grid-template-columns: 1fr; }
+  .folder-wrapper { padding-bottom: 96px; }
+  .folder-sticker { width: 80px; }
+}
