@@ -1,44 +1,40 @@
-// App.js
-
-// import React from 'react';
-// import Header from './header';
-// import HeroSection from './heroSection';
-// import ProjectSection from './projects';
-// import AboutPage from './about';
-// import TitleTextPage from './text';
-// import FooterTextPage from './footer';
-
-
-// function App() {
-  
-//   return (
-//     <div>
-//       <Header />
-//       <HeroSection />
-//       <TitleTextPage/>
-//       <ProjectSection />
-//       <AboutPage/>
-//       <FooterTextPage/>
-//       {/* Other content of your main page */}
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Hero from "./components/Hero";
-import Folder from "./components/Folders";
+import Folders from "./components/Folders";
 import ContactCard from "./components/ContactCard";
+import JourneyPage from "./components/Journey";
+import WorkPage from "./components/Work";
+import ManifestoPage from "./components/ManifestoPage";
+import EntrepreneurshipPage from "./components/EntrepreneurshipPage";
 import "./App.css";
+
+
+
+/* Home comp so root route renders your current sections */
+function Home() {
+  return (
+    <>
+      <Hero />
+      <Folders />
+      <ContactCard />
+    </>
+  );
+}
 
 export default function App() {
   return (
-    <div className="App">
-      <Hero />
-      <Folder />
-      <ContactCard/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        {/* Folder destinations */}
+        <Route path="/journey" element={<JourneyPage />} />
+        <Route path="/work" element={<WorkPage />} />
+        <Route path="/manifesto" element={<ManifestoPage />} />
+        <Route path="/entrepreneurship" element={<EntrepreneurshipPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }

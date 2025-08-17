@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap');
+
+/* Page canvas */
+.journey-wrap {
+  background: #f7f7f5;               /* soft paper vibe */
+  min-height: 100vh;
+  padding: clamp(40px, 6vw, 80px) 16px;
+  display: flex;
+  justify-content: center;
+}
+
+/* The “letter” */
+.letter {
+  background: #ffffff;
+  width: min(860px, 100%);
+  border-radius: 18px;
+  padding: clamp(28px, 5vw, 48px);
+  box-shadow:
+    0 30px 70px rgba(0,0,0,0.08),
+    0 1px 0 rgba(255,255,255,0.6) inset;
+  font-family: "Mozilla Headline", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* Small intro line */
+.letter-kicker {
+  margin: 0 0 10px;
+  font-size: 0.9rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0.55);
+}
+
+/* Big handwritten title */
+.letter-title {
+  margin: 0 0 22px;
+  font-family: "Playwrite AU QLD", cursive;
+  font-weight: 400;
+  font-size: clamp(36px, 6vw, 64px);
+  line-height: 1.1;
+  color: #111;
+}
+
+/* Body paragraphs */
+.letter > p {
+  margin: 0 0 18px;
+  font-size: clamp(15px, 1.4vw, 18px);
+  color: rgba(0,0,0,0.78);
+}
+
+/* Signoff */
+.letter-signoff {
+  margin-top: clamp(24px, 5vw, 40px);
+  border-top: 1px dashed rgba(0,0,0,0.15);
+  padding-top: clamp(14px, 2.5vw, 20px);
+}
+
+.sign-name {
+  margin: 0 0 4px;
+  font-family: "Playwrite AU QLD", cursive;
+  font-size: clamp(20px, 2.8vw, 28px);
+  color: #111;
+}
+
+.sign-meta {
+  margin: 0;
+  font-size: 0.95rem;
+  color: rgba(0,0,0,0.55);
+}
+
+/* Optional link styling inside the letter */
+.letter a {
+  color: #0b6cff;
+  text-decoration: none;
+}
+.letter a:hover { text-decoration: underline; }
