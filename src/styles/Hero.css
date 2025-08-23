@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap');
+
+
+
+.hero {
+  position: relative;
+  font-family: "Mozilla Headline", sans-serif;
+  height: 100vh;
+  width: 100%;
+  background: #e2e1e1;
+  color: #000000;
+  overflow: hidden;
+}
+
+/* Big word bottom-left */
+.hero-word {
+  position: absolute;
+  left: clamp(16px, 6vw, 120px);
+  bottom: clamp(16px, 8vh, 96px);
+  margin: 0;
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  font-size: clamp(56px, 18vw, 280px);
+  z-index: 1;
+}
+
+/* Medium-sized image on the right */
+.hero-image {
+  position: absolute;
+  left: 60%;
+  bottom: 0%;
+  height: auto;
+  z-index: 1;
+}
+.hero-cursor {
+  color: #00000091;
+}
+/* Handwritten name above the sticker (no sticker changes) */
+.iam-label {
+  position: absolute;
+  /* line up with your current sticker, which sits at left:60%; bottom:0% */
+  left: calc(80% + 40px);                 /* nudge to the right of the sticker's left edge */
+  bottom: clamp(700px, 22vh, 300px);      /* height above bottom so it sits above the sticker */
+  font-family: "Playwrite AU QLD", cursive;
+  font-size: clamp(16px, 2.2vw, 28px);
+  font-weight: 300;
+  color: #7d7c7c;
+  z-index: 2;                              /* above everything else */
+  pointer-events: none;                    /* don't block interactions with the sticker */
+}
+
+.iam-arrow {
+  position: absolute;
+  left: calc(70% + 70px);              /* start a bit right of sticker's left */
+  bottom: clamp(550px, 16vh, 220px);   /* place between label and sticker */
+  width: clamp(60px, 8vw, 120px);      /* responsive size */
+  height: auto;
+  transform: rotate(10deg);            /* slight tilt for style */
+  z-index: 2;                          /* above sticker */
+  pointer-events: none;                /* don't interfere with sticker drag */
+}
+
+/* small screens: bring the label a bit closer */
+@media (max-width: 720px) {
+  .iam-label {
+    left: calc(58% + 12px);
+    bottom: clamp(120px, 18vh, 220px);
+  }
+}
+
