@@ -34,8 +34,9 @@
 }
 
 /* Big Playwrite title */
-.letter-title {
+.letter-title-work {
   margin: 0 0 22px;
+  padding-bottom: 20px;
   font-family: "Playwrite AU QLD", cursive;
   font-weight: 400;
   font-size: clamp(36px, 6vw, 64px);

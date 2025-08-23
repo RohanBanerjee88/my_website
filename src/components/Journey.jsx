@@ -12,32 +12,29 @@ export default function JourneyPage() {
         </h1>
 
         <p>
-          When I wrote my first “hello world,” I didn’t know it would turn into a habit of
-          building little tools that made life a bit easier—and sometimes a lot more fun.
-          Since then I’ve chased the same feeling: learn fast, ship faster, and leave things
-          cleaner than I found them.
+          I’ve always believed that stories shape us — both the ones we hear and the ones we live. My journey began in Kolkata, India, where I grew up as the most curious kid in the room, constantly asking “Why?”
+          That single word became the compass of my life. I was once told, “If you know the why, the how becomes easy.”
+          What no one mentioned is that the why never really ends — it grows with you, becoming part of who you are.
         </p>
 
         <p>
-          I’ve worked across stacks—front-end craft, back-end plumbing, and the connective
-          tissue where product decisions become code. What stays constant is a love for
-          clarity: small APIs, strong defaults, and honest interfaces that get out of your way.
+          My first sparks of curiosity came from machines. I still remember the tiny electric shock I got as a kid, trying to light a bulb directly from the main switch.
+          Instead of scaring me off, it pulled me in. I became fascinated not by the looks of cars, but by the engines that powered them. That curiosity soon led me deeper into physics — quantum mechanics, gravitational waves, and the beauty of how the universe worked.
+          For a long time, I thought I’d pursue physics as my career.
         </p>
 
         <p>
-          Today I’m focused on thoughtful, minimal products. I believe design and engineering
-          are the same sport—just different positions. If the work helps people move quicker,
-          think clearer, or smile once, it’s worth doing.
+          That changed the summer of 9th grade. I stumbled upon programming — more specifically, computer vision through an OpenCV newsletter — and I was hooked.
+          Coding gave me a new way to channel my curiosity, and it quickly became the focus of my high school years. So when it was time to choose a major, computer science was the natural path forward.
         </p>
 
         <p>
-          If any of this resonates, I’d love to swap notes. The best work usually starts with
-          a short conversation and a shared curiosity.
+          When it came to universities, I made a big decision: instead of heading to the UK, I chose Michigan State University (Go Green!).
+          Two things shaped that choice — a close friend who was also joining MSU, and the book Shoe Dog, which convinced me to chase the American Dream and dedicate my life to building something meaningful.
         </p>
 
         <footer className="letter-signoff">
           <p className="sign-name">— Rohan Banerjee</p>
-          <p className="sign-meta">Software Engineer</p>
         </footer>
       </article>
     </main>
